@@ -25,11 +25,11 @@ Below are three screenshots,
 - the second showing the start of the second run
 - the third showing the end result of the second run, it took as many as 14.524.912 tries to finish.
 
-<img src="KnightTour-run1-end.png" width=350>
+<img src="KnightTour-run1-end.png" width=450>
 
-<img src="KnightTour-run2-start.png" width=350>
+<img src="KnightTour-run2-start.png" width=450>
 
-<img src="KnightTour-run2-end.png" width=350>
+<img src="KnightTour-run2-end.png" width=450>
 
 ## Built with
 The project is built in Visual Studio, as a .NET Console Project, with C# as programming language
