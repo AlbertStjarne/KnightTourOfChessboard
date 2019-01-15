@@ -7,9 +7,8 @@ namespace _32_KnightTour
     {
         public static void Main(string[] args)
         {
-            var board = new Board();
-            board.PopulateArray(4, 5);
-            board.DisplayBoard();
+            var knight = new Knight();
+            knight.Move();
         }
     }
 }

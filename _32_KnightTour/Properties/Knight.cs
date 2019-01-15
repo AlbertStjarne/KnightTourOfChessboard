@@ -34,8 +34,34 @@ namespace _32_KnightTour.Properties
 
                 do
                 {
-
+                    if (!IsMoving())
+                        GetTourResults();
                 } while (!_isEndTour);
+            }
+        }
+
+        private void GetTourResults()
+        {
+            _isEndTour = true;
+
+            if (_moveCounter == Board.size * Board.size)
+            {
+                _isFullTour = true;
+                _board.DisplayBoard();
+                Console.WriteLine($"SUCCESS. The Tour # {_tourCount} was a complete tour!\n");
+                return;
+            }
+
+            if (_moveCounter == _bestScore)
+            {
+                _board.DisplayBoard();
+                Console.WriteLine($"No success. The best scrore is still {_bestScore} moves reached again on this Tour # {_tourCount}\n");
+            }
+            else if (_moveCounter >_bestScore)
+            {
+                _bestScore = _moveCounter;
+                _board.DisplayBoard();
+                Console.WriteLine($"No success, but getting closer! {_bestScore} moves reached on Tour # {_tourCount}\n");
             }
         }
 
