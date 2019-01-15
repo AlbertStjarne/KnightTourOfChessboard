@@ -1,4 +1,5 @@
 ﻿using System;
+using _32_KnightTour.Properties;
 
 namespace _32_KnightTour
 {
@@ -6,7 +7,9 @@ namespace _32_KnightTour
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var board = new Board();
+            board.PopulateArray(4, 5);
+            board.DisplayBoard();
         }
     }
 }
